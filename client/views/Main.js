@@ -18,8 +18,8 @@ import AllEvents from './all-events';
 
 import Directions from './directions-event';
 
-var Icon = require('react-native-vector-icons/Ionicons');
-var hamburgerIcon = (<Icon name="navicon-round" size={30} color="#900" />);
+var Icon = require('react-native-vector-icons/FontAwesome');
+var hamburgerIcon = (<Icon name="rocket" size={30} color="#900" />);
 const deviceWidth = Dimensions.get('window').width;
 
 class Main extends Component {
@@ -54,7 +54,7 @@ class Main extends Component {
         panCloseMask={0.2}
         closedDrawerOffset={-3}
         styles={{
-          drawer: {shadowColor: '#000000', shadowOpacity: 0.8, shadowRadius: 3, backgroundColor: '#0D5265'},
+          drawer: {shadowColor: '#000000', shadowOpacity: 0.8, shadowRadius: 3, backgroundColor: 'white'},
           main: {paddingLeft: 3}
         }}
         tweenHandler={(ratio) => ({
