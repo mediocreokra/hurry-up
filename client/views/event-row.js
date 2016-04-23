@@ -84,7 +84,7 @@ class Event extends Component {
 
        <Text style={styles.accordianHeader}>
         <Icon name='android-walk' size={25}></Icon>
-        <Text style='paddingLeft: 25'>  Directions</Text>
+        <Text style={styles.DirectionsHeader}>  Directions</Text>
        </Text>
         
       </View>
@@ -127,7 +127,6 @@ class Event extends Component {
             content={content}
             easing="easeOutCubic"
             onPress={this.getEventDirections.bind(this, this.props.event)}
-            style={styles.accordian}
           />
       </View>
     );
@@ -135,6 +134,9 @@ class Event extends Component {
 };
 
 const styles = StyleSheet.create({
+  DirectionsHeader: {
+    paddingLeft: 25
+  },
   EventContainer: {
     flex: 1,
     borderBottomColor: '#F5F5F6',
@@ -190,7 +192,7 @@ const styles = StyleSheet.create({
 
   accordian: {
     flex: 1,
-    padding: 0
+    padding: 0,
   }, 
 
   accordianHeader: {
